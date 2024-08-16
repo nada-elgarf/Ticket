@@ -1,0 +1,14 @@
+<div id="divChart">
+  <div class="info">
+    <div class="content m-3">
+      <h2>إحصائيات إستخدام القسيمة</h2>
+      <span>05 يوليو , 2023 - 05 أغسطس , 2023<i class="fa-solid fa-angle-down"></i></span>
+    </div>
+    <button type="button" class="btn btn-light m-3">سنويا<i class="fa-solid fa-angle-down"></i></button>
+  </div>
+  <apx-chart class="vertical-line" [series]="chartOptions.series!" [chart]="chartOptions.chart!"
+    [xaxis]="chartOptions.xaxis!" [stroke]="chartOptions.stroke!" [dataLabels]="chartOptions.dataLabels!"
+    [yaxis]="chartOptions.yaxis!" [labels]="chartOptions.labels!" [legend]="chartOptions.legend!"
+    [title]="chartOptions.title!" [subtitle]="chartOptions.subtitle!"></apx-chart>
+
+</div>

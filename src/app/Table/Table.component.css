@@ -1,0 +1,183 @@
+.tikets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tiket p {
+  font-size: 17px;
+  font-weight: 500;
+  display: inline;
+}
+
+.tiket input {
+  display: inline-block;
+  border: 1px solid rgba(146, 161, 173, 0.4);
+  outline: none;
+  width: 200px;
+  padding: 2px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.tiket span {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid rgba(146, 161, 173, 0.4);
+  margin: 5px;
+  padding: 4px 8px;
+}
+
+.tiket span i {
+  color: rgba(146, 161, 173);
+}
+
+.book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.book button {
+  display: inline-block;
+  background-color: rgba(138, 116, 249, 1);
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.toggle-checkbox {
+  --webkit-appearance: none;
+  appearance: none;
+}
+
+.toggle-switch {
+  background-color: rgba(138, 116, 249, 1);
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.toggle-switch::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900px;
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.toggle-checkbox:checked+.toggle-switch {
+  background-color: rgba(138, 116, 249, 1);
+}
+
+.toggle-checkbox:checked+.toggle-switch::before {
+  left: 50px;
+}
+
+tr {
+  background-color: #ccc;
+
+}
+
+tr th {
+  color: #aaa;
+}
+
+.box, .boxx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.box img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.box .info {
+  margin-right: 5px;
+}
+
+.box .info h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box .info span {
+  color: #ccc;
+}
+
+.numTicket {
+  text-align: center;
+}
+
+
+.boxx {
+  margin-right: 20px;
+}
+
+.boxx span:first-child {
+  background-color: rgba(138, 116, 249, 0.1);
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-left: 5px;
+}
+
+.boxx span:first-child i {
+  color: rgba(138, 116, 249, 1);
+}
+
+.infoo h3 {
+  font-size: 9px;
+  margin-bottom: 0;
+}
+
+.boxx .infoo span {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.boxx span:nth-child(3) {
+  background-color: rgba(138, 116, 249, 0.1);
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-right: 5px;
+}
+
+.boxx span:nth-child(3) i {
+  color: rgba(138, 116, 249, 1);
+}
+
+.cinme {
+  font-size: 13px;
+}
+
+@media (min-width: 320px) {
+  .tiket input {
+    width: 120px;
+  }
+
+  .book button {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+
+  .book .button {
+    display: inline-block;
+    font-size: 8px;
+  }
+}

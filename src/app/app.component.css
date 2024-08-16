@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.title span, .edit span {
+  margin: 6px;
+}
+
+.title span:first-child {
+  background-color: #E7EAED;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.title span:last-child {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.edit {
+  background-color: #fff;
+  border: 1px solid #E9EAEA;
+  padding: 5px 10px;
+}
+
+.edit span:first-child {
+  color: #8A74F9;
+}
+
+.edit span:last-child {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .edit, .title {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .edit, .title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px
+  }
+}

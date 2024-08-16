@@ -1,0 +1,67 @@
+#divChart {
+  display: block;
+  background-color: #fff;
+  width: 900px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#divChart h2 {
+  height: 13px;
+  font-family: 600;
+  font-size: 14px;
+}
+
+#divChart span {
+  color: rgba(146, 161, 173, 1);
+}
+
+@media only screen and (min-width: 1024px) {}
+
+@media (max-width: 1024px) {
+  #idChart {
+    width: 100%;
+  }
+
+  .info {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .info {
+    padding: 10px;
+  }
+
+  #main {
+    padding-top: 50%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 320px) {
+  #divChart {
+    width: 305px;
+  }
+}
+
+@media (min-width: 375px) {
+  #divChart {
+    width: 330px;
+  }
+}
+
+@media (min-width: 768px) {
+  #divChart {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #divChart {
+    width: 900px;
+  }
+}

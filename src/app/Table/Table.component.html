@@ -1,0 +1,75 @@
+<div class="tikets ">
+  <div class="tiket mt-4">
+    <p>مبيعات التذاكر</p>
+    <input type="text" placeholder="بحث عن...">
+    <span><i class="fa-solid fa-grip-lines"></i> </span>
+    <span> <i class="fa-solid fa-arrow-down-long"></i><i class="fa-solid fa-arrow-up-long"></i></span>
+  </div>
+  <div class="book">
+    <label class="mt-0">
+      <input type="checkbox" class="toggle-checkbox">
+      <div class="toggle-switch"></div>
+    </label>
+    <div class="mt-4 button">
+      <button type="button" class="btn btn-primary">حجز </button>
+    </div>
+  </div>
+</div>
+<div class="conrainer">
+  <div class="card">
+    <p-table [value]="customers" [paginator]="true" [rows]="10" [tableStyle]="{'min-width': '900px'}"
+      [rowsPerPageOptions]="[10,25,50]">
+      <ng-template pTemplate="header">
+        <tr>
+          <th style="width:5%">رقم</th>
+          <th style="width:10%">المستخدم</th>
+          <th style="width:10%">رقم التذكرة</th>
+          <th style="width:10%">قيمى
+            التذكره<i class="fa-solid fa-arrow-down-long"></i><i class="fa-solid fa-arrow-up-long"></i></th>
+          <th style="width:20%">السينمات</th>
+          <th style="width:10%">الاشخاص</th>
+          <th style="width:10%">عدد مرات الشراء</th>
+          <th style="width:10%">التذكره</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-customer>
+        <tr>
+          <td>{{customer?.id}}</td>
+          <td>
+            <div class="box">
+              <img [src]="customer.img">
+              <div class="info">
+                <h3>{{customer?.user}} </h3>
+                <span>{{customer?.phoneNumber}}</span>
+              </div>
+            </div>
+          </td>
+          <td class="numTicket">{{customer?.ticketNumber}}</td>
+          <td>{{customer?.price}}</td>
+          <td class="cinme">{{customer?.cinema}}</td>
+          <td>{{customer?.numUser}}</td>
+          <td>{{customer?.numPrice}}</td>
+          <td>
+            <div class="boxx">
+              <span><i class="fa-solid fa-ticket-simple"></i></span>
+              <div class="infoo">
+                <h3>{{customer?.ticket}}</h3>
+                <span>{{customer?.vTicket}}</span>
+              </div>
+              <span><i class="fa-solid fa-download"></i></span>
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+      <ng-template>
+        <span>عرض</span>
+        <span>من اصل 250</span>
+      </ng-template>
+      <ng-template pTemplate="paginatorleft">
+        <p-button type="button" styleClass="p-button-text"></p-button>
+      </ng-template>
+    </p-table>
+  </div>
+
+
+</div>
